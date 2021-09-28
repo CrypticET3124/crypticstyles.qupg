@@ -1,0 +1,227 @@
+/*main text style*/
+body, html {
+	font-family: Calibri,sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	height: 100%;
+}
+html {
+	overflow-x: hidden;
+}
+main {
+	padding: 2rem;
+	margin-bottom: 2rem;
+}
+/*header*/
+header > section:first-of-type {
+	text-align: center;
+}
+.navsticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.mainsticky {
+	margin-top: 3rem;
+}
+/*navbar*/
+nav ul { 
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #323232;
+}
+nav li {
+	float: left;
+	border-right: 1px solid #bbbbbb;
+}
+nav li:first-child.logo {
+	height: 3rem;
+}
+nav li.right {
+	border-right: none;
+	float: right;
+	border-left: 1px solid #bbbbbb;
+}
+nav li a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: .75rem 1rem;
+	text-decoration: none;
+	font-weight: bold;
+}
+nav li a:hover, .dropdown:hover .dropbtn {
+	background-color: #111111;
+}
+nav li.dropdown {
+	display: inline-block;
+}
+nav .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #4b4b4b;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+nav .dropdown-content a {
+	color: rgb(255, 255, 255);
+	padding: .75rem 1rem;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+nav .dropdown-content a:hover {
+	background-color: rgb(50, 50, 50);
+}
+nav .dropdown:hover .dropdown-content {
+	display: block;
+}
+nav .logonav {
+	max-height: 3rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	overflow: hidden;
+}
+/*text formatting*/
+h1 {
+	font-size: 2.5rem;
+	font-style: bold;
+}
+h2 {
+	font-size: 1.375rem;
+}
+h3 {
+	font-size: 1.25rem;
+}
+h4 {
+	font-size: 1.125rem;
+}
+h5 {
+	font-size: 1rem;
+}
+h6 {
+	font-size: .875rem;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+a.public::before {
+	content: "";
+	width: 1em;
+	height: 1em;
+	margin: 0 0.05em 0 0.1em;
+	background: url(/files/images/icons/public24px.svg);
+	background-size: contain;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+/*footer position*/
+.wrapper {
+	min-height: 100%;
+	margin-bottom: -50px;
+}
+footer, .push {
+	height: 50px;
+}
+/*footer style*/
+footer { 
+	margin: 0;
+	padding-left: .5em;
+	padding-right: .5em;
+	overflow: hidden;
+	background-color: #323232;
+	color: white;
+}
+/*external link icon*/
+a[target="_blank"]:not(.no-ex-link)::after {
+	content: "";
+	width: 1em;
+	height: 1em;
+	margin: 0 0.05em 0 0.1em;
+	background: url(/files/icons/open_in_new24px.svg);
+	background-size: contain;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+/*projlist*/
+.projlist ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: space-between;
+}
+.projlist li {
+	min-width: 200px;
+	max-width: 500px;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	margin-bottom: 2rem;
+	margin-left: -1px;
+	border-right: 1px solid slategray;
+	border-left: 1px solid slategray;
+	list-style: none;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.projlist li * {
+	width: 100%;
+}
+.projlist {
+	font-size: 1rem;
+}
+.projlist p:first-of-type:not(.nonfirst) {
+	height: 4rem;
+	margin-bottom: 0;
+	line-height: 1.75rem;
+	border-bottom: 1px solid slategrey;
+	font-size: 1.75rem;
+	font-weight: bold;
+}
+.projlist section.buttons * {
+	width: fit-content;
+}
+.projlist section.buttons {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: auto;
+	align-content: start
+}
+.projlist section.buttons a {
+	padding: .75rem 0;
+	color: lightgray;
+	text-align: center;
+	display: inline-block;
+	font-size: 1.25rem;
+	flex: 1 0 auto;
+	text-decoration: none;
+}
+.projlist a:link, .projlist a:visited {
+	background-color: green;
+}
+.projlist section.buttons a:hover {
+	background-color: #00af00;
+}
+.projlist section.buttons a:active {
+	background-color: #99ff99;
+}
+.projlist section.buttons a.first {
+	margin: auto .5rem auto 0;
+}
+.projlist section.buttons a.middle {
+	margin: auto .5rem auto .5rem;
+}
+.projlist section.buttons a.last {
+	margin: auto 0 auto .5rem;
+}

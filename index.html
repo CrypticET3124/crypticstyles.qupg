@@ -1,0 +1,108 @@
+---
+title: CrypticET3124's Works
+---
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{{ page.title }}</title>
+		<link rel="stylesheet" href="/css/style.css">
+		<!--Favicons-->
+		<link rel="shortcut icon" href="/sitewide/favicons/favicon.ico">
+		<link rel="icon" sizes="16x16 32x32 64x64" href="/sitewide/favicons/favicon.ico">
+		<link rel="icon" type="image/png" sizes="196x196" href="/sitewide/favicons/favicon-192.png">
+		<link rel="icon" type="image/png" sizes="160x160" href="/sitewide/favicons/favicon-160.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/sitewide/favicons/favicon-96.png">
+		<link rel="icon" type="image/png" sizes="64x64" href="/sitewide/favicons/favicon-64.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/sitewide/favicons/favicon-32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/sitewide/favicons/favicon-16.png">
+		<link rel="apple-touch-icon" href="/sitewide/favicons/favicon-57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/sitewide/favicons/favicon-114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/sitewide/favicons/favicon-72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/sitewide/favicons/favicon-144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/sitewide/favicons/favicon-60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/sitewide/favicons/favicon-120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/sitewide/favicons/favicon-76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/sitewide/favicons/favicon-152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/sitewide/favicons/favicon-180.png">
+		<meta name="msapplication-TileColor" content="#FFFFFF">
+		<meta name="msapplication-TileImage" content="/sitewide/favicons/favicon-144.png">
+		<meta name="msapplication-config" content="/sitewide/favicons/browserconfig.xml">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header>
+				<section>
+					<h1>
+						CrypticStyles
+					</h1>
+					<h2>
+						A collection of userscript website styles.
+					</h2>
+				</section>
+				<nav>
+					<ul>
+						<li class="logo">
+							<img class="logonav" src="/files/images/logos/QUGLogoSimpleWhiteT500.png" alt="Logo">
+						</li>
+						<li><a href="/">Home</a></li>
+						<li><a href="#userscripts">Userscripts</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main>
+				<section class="projlist">
+					<ul>
+						<li>
+							<p>
+								Dark JavaSE 7 API Docs
+							</p>
+							<p>
+								A dark theme for the JavaSE 7 API documentation pages.
+							</p>
+							<p>
+								<strong>Matches:</strong> <br>
+								<em>http*://docs.oracle.com/javase/7/docs/api/*</em>
+							</p>
+							<section class="buttons">
+								<a href="https://userstyles.org/styles/userjs/214996/dark-javase-7-api-docs.user.js" class="first">Install
+									Userscript</a>
+								<a href="https://userstyles.org/styles/214996/dark-javase-7-api-docs" class="last">UserStyles
+									Page</a>
+							</section>
+						</li>
+					</ul>
+				</section>
+			</main>
+		</div>
+
+		<footer>
+			&copy; me
+			<br>
+			Built: {{ site.time | date: "%Y-%m-%d" }}
+			<script>
+				window.onscroll = function () { myFunction() };
+
+				var navbar = document.getElementsByTagName("nav")[0];
+				var main = document.getElementsByTagName("main")[0];
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+					if (window.pageYOffset >= sticky) {
+						navbar.classList.add("navsticky")
+						main.classList.add("mainsticky");
+					} else {
+						navbar.classList.remove("navsticky")
+						main.classList.remove("mainsticky");
+					}
+				}
+			</script>
+		</footer>
+	</body>
+
+</html>
